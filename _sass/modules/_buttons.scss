@@ -1,0 +1,26 @@
+%btn-config {
+	box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.5);
+	display: inline-block;
+	font-size: 1.5rem;
+	padding: 0.25em 1em;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all 0.15s linear;
+
+	&:hover {
+		box-shadow: 0px 20px 20px -10px rgba(0, 0, 0, 0.35);
+		transform: scale(1.1);
+	}
+}
+
+.btn-dark {
+	@extend %btn-config;
+	background-color: $brandBlueDark;
+	color: white;
+}
+
+.btn-light {
+	@extend %btn-config;
+	background-color: white;
+	color: $brandBlueLight;
+}
