@@ -1,8 +1,32 @@
+.projects {
+	list-style: none;
+	padding: 0;
+
+	> li {
+		@include media(small) {
+			display: inline-block;
+			width: 75%;
+		}
+
+		@include media(medium) {
+			width: 33.3333%;
+		}
+	}
+}
+
 .project-logo,
 .project-attributes {
 	@include media(medium) {
 		float: left;
 		width: 48%;
+	}
+
+	h3 {
+		margin-top: 2em;
+
+		&:first-child {
+			margin-top: 0;
+		}
 	}
 }
 
@@ -21,7 +45,7 @@
 
 	> li {
 		display: inline-block;
-		margin: 0 0.5em 0.5em 0;
+		margin: 0 1em 1em 0;
 	}
 }
 
