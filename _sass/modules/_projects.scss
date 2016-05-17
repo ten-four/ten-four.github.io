@@ -5,6 +5,7 @@
 	> li {
 		@include media(small) {
 			display: inline-block;
+			padding: 0 1.414em;
 			width: 75%;
 		}
 
