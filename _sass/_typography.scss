@@ -34,6 +34,27 @@ p {
 	margin-bottom: 1.3em;
 }
 
+a {
+	color: $brandBlueLight;
+	transition: color 0.2s ease-in-out;
+
+	&:hover,
+	&:active,
+	&:focus {
+		color: $brandBlueDark;
+	}
+
+	.layout-dark &:not(.btn-light):not(.btn-dark) {
+		color: white;
+
+		&:hover,
+		&:active,
+		&:focus {
+			color: #ccc;
+		}
+	}
+}
+
 .testimonial {
 	clear: both;
 	font-family: 'Raleway', sans-serif;

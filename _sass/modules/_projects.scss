@@ -2,7 +2,7 @@
 .project-attributes {
 	@include media(medium) {
 		float: left;
-		width: 49%;
+		width: 48%;
 	}
 }
 
@@ -10,7 +10,7 @@
 	margin-top: 1.414em;
 
 	@include media(medium) {
-		margin-left: 2%;
+		margin-left: 4%;
 		margin-top: 0;
 	}
 }
@@ -33,8 +33,10 @@
 		@include media(medium) {
 			display: inline-block;
 			margin-right: -0.25em;
+			margin-top: 2.828em;
 			padding: 0 1.414em;
 			text-align: center;
+			vertical-align: top;
 			width: 33.3333%;
 		}
 
