@@ -2,6 +2,10 @@
 	padding: $componentSpacing 0;
 }
 
+.layout-component-short {
+	padding: $componentSpacing / 2 0;
+}
+
 .layout-light {
 	background-color: white;
 }
@@ -12,6 +16,7 @@
 }
 
 .layout-container {
+	@extend %clearfix;
 	margin: 0 auto;
 	max-width: $gridMaxWidth;
 	padding: 0 $gridGutterWidth;

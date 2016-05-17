@@ -1,0 +1,6 @@
+// https://github.com/connectivedx/Phoenix/blob/master/Assets/src/css/mixins/_media.scss
+@mixin media($query) {
+	@if map-has-key($breakpoints, $query) {
+		@media only screen and (min-width: em(map-get($breakpoints, $query), (context: 16))) { @content; }
+	}
+}

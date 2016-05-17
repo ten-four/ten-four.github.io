@@ -1,0 +1,27 @@
+// https://github.com/connectivedx/Phoenix/blob/master/Assets/src/css/functions/_em.scss
+@function em($target, $options: ()) {
+	$options: map-merge((
+		context: $baseFontSize
+	), $options);
+
+	$output: null;
+	$context: map-get($options, context);
+
+	@if type-of($target) == list {
+		$output: unquote('') !default;
+
+		@each $value in $target {
+			$value: em($value, (context: $context));
+
+			$output: append($output, $value);
+		}
+	}
+	@else {
+		$target: parseInt($target);
+		$context: parseInt($context);
+
+		$output: ($target / $context) * 1em;
+	}
+
+	@return $output;
+}

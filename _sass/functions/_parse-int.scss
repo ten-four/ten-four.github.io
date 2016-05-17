@@ -1,0 +1,4 @@
+// https://github.com/connectivedx/Phoenix/blob/master/Assets/src/css/functions/_parse-int.scss
+@function parseInt($n) {
+	@return $n / ($n * 0 + 1);
+}

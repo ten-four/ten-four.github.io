@@ -1,9 +1,12 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
 html {
-	font: 100%/1.5 'Source Sans Pro', Helvetica, Arial, sans-serif;
+	font: 100%/1.45 'Source Sans Pro', Helvetica, Arial, sans-serif;
 }
 
 body {
 	background-color: $brandBlueLight;
 	margin: 0;
-	text-align: center;
 }

@@ -1,0 +1,49 @@
+.project-logo,
+.project-attributes {
+	@include media(medium) {
+		float: left;
+		width: 49%;
+	}
+}
+
+.project-attributes {
+	margin-top: 1.414em;
+
+	@include media(medium) {
+		margin-left: 2%;
+		margin-top: 0;
+	}
+}
+
+.project-technologies {
+	list-style: none;
+	padding: 0;
+
+	> li {
+		display: inline-block;
+		margin: 0 0.5em 0.5em 0;
+	}
+}
+
+.project-metrics {
+	list-style: none;
+	padding: 0;
+
+	> li {
+		@include media(medium) {
+			display: inline-block;
+			margin-right: -0.25em;
+			padding: 0 1.414em;
+			text-align: center;
+			width: 33.3333%;
+		}
+
+		+ li {
+			margin-top: 2.828em;
+		}
+	}
+
+	.metric-value {
+		margin: 0;
+	}
+}

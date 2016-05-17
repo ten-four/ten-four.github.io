@@ -1,3 +1,5 @@
+$baseFontSize: 16px;
+
 $brandBlueDark: #3f3f6c;
 $brandBlueLight: #4f7bbe;
 
@@ -5,3 +7,19 @@ $componentSpacing: 64px;
 
 $gridGutterWidth: 16px;
 $gridMaxWidth: 1200px;
+
+$breakpoints: (
+	extraSmall: 320px,
+	small: 480px,
+	medium: 768px,
+	large: 960px,
+	extraLarge: 1400px
+);
+
+%clearfix {
+	&::after {
+		clear: both;
+		content: "";
+		display: table;
+	}
+}

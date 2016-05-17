@@ -18,7 +18,7 @@
 	<meta name="msapplication-TileImage" content="img/content/touch-icon.png" />
 	<meta name="msapplication-TileColor" content="#ffffff" />
 
-	<link href="//fonts.googleapis.com/css?family=Raleway|Source+Sans+Pro" rel="stylesheet" type="text/css">
+	<link href="//fonts.googleapis.com/css?family=Raleway:400,700|Source+Sans+Pro" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="css/style.css" />
 
 	<!-- For everything else -->
@@ -35,6 +35,18 @@
 		ga('create', 'UA-77269073-1', 'auto');
 		ga('send', 'pageview');
 	</script>
+
 	{{ content }}
+
+	<section class="layout-component layout-dark">
+		<div class="layout-container text-center">
+			<h2>Have a website or web application that needs to be built or enhanced?</h2>
+			<p><a href="mailto:hello@ten-four.tech" class="btn-light">Say hello</a></p>
+		</div>
+	</section>
+
+	<footer class="layout-component">
+		<p class="disclaimer text-center">&copy; {{ site.time | date: '%Y' }} Ten-Four Tech, LLC</p>
+	</footer>
 </body>
 </html>

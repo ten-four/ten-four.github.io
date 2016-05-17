@@ -5,3 +5,33 @@ img {
 .logo {
 	max-width: 500px;
 }
+
+.logo-small {
+	max-width: 150px;
+}
+
+.img-right {
+	margin: 1.414em 0;
+
+	@include media(large) {
+		float: right;
+		margin: 0 0 1.414em 1.414em;
+	}
+
+	@include media(extraLarge) {
+		margin-right: -80px;
+	}
+}
+
+.img-left {
+	margin: 1.414em 0;
+
+	@include media(large) {
+		float: left;
+		margin: 0 1.414em 1.414em 0;
+	}
+
+	@include media(extraLarge) {
+		margin-left: -80px;
+	}
+}

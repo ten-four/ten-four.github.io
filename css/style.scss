@@ -2,9 +2,11 @@
 # Copyright Ten-Four Tech, LLC
 ---
 @import "variables";
+@import "functions/all";
+@import "mixins/all";
 @import "root";
 @import "typography";
 @import "media";
 @import "layout";
-@import "modules/buttons";
+@import "modules/all";
 @import "utilities";
