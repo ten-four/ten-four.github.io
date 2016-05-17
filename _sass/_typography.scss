@@ -44,7 +44,7 @@ a {
 		color: $brandBlueDark;
 	}
 
-	.layout-dark &:not(.btn-light):not(.btn-dark) {
+	.layout-dark &:not(.btn) {
 		color: white;
 
 		&:hover,

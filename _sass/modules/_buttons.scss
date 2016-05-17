@@ -13,13 +13,19 @@
 	}
 }
 
-.btn-dark {
+.btn-blue-light {
+	@extend %btn-config;
+	background-color: $brandBlueLight;
+	color: white;
+}
+
+.btn-blue-dark {
 	@extend %btn-config;
 	background-color: $brandBlueDark;
 	color: white;
 }
 
-.btn-light {
+.btn-white {
 	@extend %btn-config;
 	background-color: white;
 	color: $brandBlueLight;

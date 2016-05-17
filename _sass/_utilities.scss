@@ -2,3 +2,13 @@
 	left: -999em;
 	position: absolute;
 }
+
+.social {
+	padding: 0;
+
+	> li {
+		display: inline-block;
+		margin: 0 1em;
+		width: 48px;
+	}
+}
