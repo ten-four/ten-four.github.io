@@ -1,9 +1,14 @@
 h1, .h1, h2, .h2, h3, .h3 {
+	color: $brandBlueLight;
 	font-family: 'Raleway', sans-serif;
 	line-height: 1.2;
 
 	&:first-child {
 		margin-top: 0;
+	}
+
+	.layout-dark & {
+		color: white;
 	}
 }
 
@@ -34,7 +39,7 @@ p {
 	margin-bottom: 1.3em;
 }
 
-a {
+a:not(.btn) {
 	color: $brandBlueLight;
 	transition: color 0.2s ease-in-out;
 
@@ -44,7 +49,7 @@ a {
 		color: $brandBlueDark;
 	}
 
-	.layout-dark &:not(.btn) {
+	.layout-dark & {
 		color: white;
 
 		&:hover,

@@ -40,16 +40,6 @@
 	}
 }
 
-.project-technologies {
-	list-style: none;
-	padding: 0;
-
-	> li {
-		display: inline-block;
-		margin: 0 1em 1em 0;
-	}
-}
-
 .project-metrics {
 	list-style: none;
 	padding: 0;
@@ -72,5 +62,27 @@
 
 	.metric-value {
 		margin: 0;
+	}
+}
+
+.project-gallery {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	figure {
+		margin: inherit;	// this can either be inherit or initial; auto causes the content to not be flush on the left and right with the space-between justification
+		margin-bottom: $gridGutterWidth;
+		width: 100%;
+
+		@include media(small) {
+			margin-bottom: 2%;
+			width: 49%;
+		}
+
+		@include media(large) {
+			width: 32%;
+		}
 	}
 }
