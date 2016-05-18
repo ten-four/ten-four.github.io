@@ -46,6 +46,14 @@
 	}
 }
 
+.project-metrics-heading {
+	margin-top: 2em !important;	// overrides first-child rule
+
+	@include media(medium) {
+		text-align: center;
+	}
+}
+
 .project-metrics {
 	list-style: none;
 	padding: 0;
