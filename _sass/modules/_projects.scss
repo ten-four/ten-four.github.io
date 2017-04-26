@@ -5,7 +5,8 @@
 	> li {
 		display: inline-block;
 		max-width: 100%;
-		padding: 0 1.414em;
+		padding: 1.414em;
+		vertical-align: middle;
 		width: 320px;
 	}
 }
@@ -46,6 +47,7 @@
 .project-metrics {
 	list-style: none;
 	padding: 0;
+	text-align: center;
 
 	> li {
 		@include media(medium) {
@@ -53,7 +55,6 @@
 			margin-right: -0.25em;
 			margin-top: 2.828em;
 			padding: 0 1.414em;
-			text-align: center;
 			vertical-align: top;
 			width: 33.3333%;
 		}
