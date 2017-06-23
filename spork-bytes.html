@@ -27,6 +27,7 @@ title: Spork Bytes Case Study | ten-four
 			<ul>
 				<li>REST API development</li>
 				<li>Single page application development</li>
+				<li>Custom email template development</li>
 				<li>DevOps</li>
 				<li>Project Management</li>
 			</ul>
@@ -53,6 +54,12 @@ title: Spork Bytes Case Study | ten-four
 				</li>
 				<li>
 					<a href="https://www.heroku.com/" target="_blank">Heroku</a>
+				</li>
+				<li>
+					<a href="https://sendgrid.com/" target="_blank">SendGrid</a>
+				</li>
+				<li>
+					<a href="http://foundation.zurb.com/emails.html" target="_blank">Foundation for Emails</a>
 				</li>
 			</ul>
 		</div>
@@ -82,7 +89,37 @@ title: Spork Bytes Case Study | ten-four
 		<p>To grow a business requires ever increasing efficiency and in the case of Spork Bytes, efficiency meant consolidating and digitizing their manual business processes.  When we had our first meeting, I observed Chris, one of the co-founders, plan a meal; it took him 15 minutes.  The process included editing multiple Excel spreadsheets, showing and hiding columns depending on the audience, exporting the spreadsheets to PDFs, using an online service to merge those PDFs, and then emailing those PDFs.  I told Chris that we could get that time down to 1 minute for some meals.</p>
 		<img src="/img/content/mockups/spork/client-edit-multiple.jpg" alt="Spork Bytes - Edit Client" class="img-right img-framed">
 		<p>We began with a strong tech stack of PostgreSQL, a relational database with powerful JSON capabilities, Node and Express to build a REST API, and Angular and Angular Material to build a fast, clean front-end.  The first step was to build a client and partner management system, a single source of truth for all metadata of the offices and restaurants that Spork Bytes works with.  This would then form the basis for creating all future meals, thereby reducing mistakes because much less was done through manual typing.</p>
-		<p>With the client and partner management system in place, the meat of the application was ready to be built: meal planning.  We needed to buld the app to be flexible enough to allow for the many different scenarios Spork had to deal with, but had to make it structured enough to have a well-defined process that was easy to follow for Spork employees, clients, and partners alike.</p>
+		<p>With the client and partner management system in place, the meat of the application was ready to be built: meal planning.  We needed to build the app to be flexible enough to allow for the many different scenarios Spork had to deal with, but had to make it structured enough to have a well-defined process that was easy to follow for Spork employees, clients, and partners alike.</p>
+	</div>
+</section>
+
+<section class="layout-component layout-dark">
+	<div class="layout-container">
+		<figure class="testimonial">
+			<blockquote>
+				<p>Since working with ten-four, we have implemented project management tools that we never knew existed.</p>
+			</blockquote>
+			<figcaption>
+				- Chris Diamond, co-founder of Spork Bytes
+			</figcaption>
+		</figure>
+	</div>
+</section>
+
+<section class="layout-component layout-light">
+	<div class="layout-container">
+		<h2>Planning for Success</h2>
+		<p>Having already planned over 1,000 meals before we began developing the app, Spork had a fairly well defined workflow for planning meals.  They would put together one or more meal options per meal proposal, send that to the client via email, get an approval from them for one of the meal options, and send the meal option to the partner restaurant(s) for approval.  After everyone had approved the meal, it would then be confirmed 24-48 hours before the date of delivery.  Assuming everything was confirmed, the meal would be delivered by one of Spork's delivery drivers.</p>
+		<img src="/img/content/mockups/spork/create-meal-laptop.jpg" alt="Spork Bytes - Create Meal on Laptop" class="img-left img-framed">
+		<p>Given their workflow, we knew that:</p>
+		<ul>
+			<li>Every meal proposal would have to have one or more meal options</li>
+			<li>Every meal option would have one or more partner restaurants involved</li>
+			<li>Every meal option would be delivered by one or more delivery drivers</li>
+			<li>Every client and partner involved with a meal would have one or more contact persons for Spork to work with</li>
+			<li>Pricing for meals could be set on a per-item level or for an entire "quick menu," say a $12 lunch where you can choose one entreé and one side</li>
+		</ul>
+		<p>With the requirements set, we started development, meeting weekly to ensure that what we were building matched Spork's expectations.  Every week saw increases in functionality until we were finally ready to start testing in the wild.</p>
 	</div>
 </section>
 
@@ -101,10 +138,17 @@ title: Spork Bytes Case Study | ten-four
 
 <section class="layout-component layout-light">
 	<div class="layout-container">
-		<h2>Section Title</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consequuntur minima molestiae quibusdam, expedita quos amet distinctio asperiores quia qui repellendus fugiat aliquid aperiam, deserunt beatae quae consequatur. Ullam, asperiores.  Eveniet, et dolor aspernatur! Cupiditate, voluptate, quidem, eos consequuntur sequi dolorum tempore iusto quis quibusdam labore, minus molestias et. Nam recusandae ut nisi, ea dolor consequatur quaerat ex voluptate maxime.</p>
-		<img src="//placehold.it/600x400" alt="iPhone Mockup" class="img-left">
-		<p>Facere qui impedit ipsa molestias voluptate incidunt accusantium dolores explicabo praesentium harum, unde, necessitatibus aliquam doloribus et assumenda dolore deserunt sunt cumque vitae aspernatur ab laboriosam! Asperiores eos quibusdam sapiente.</p>
-		<p>Saepe ipsum numquam quibusdam ipsam quaerat quam laudantium, dolores reiciendis ut, necessitatibus, dolorem accusantium et quod temporibus debitis, amet nemo doloribus hic. Nulla sunt eos aliquid nobis laboriosam dolorem ad.</p>
+		<h2>Go for Launch</h2>
+		<p>Beta testing began with a small handful of Spork's clients and feedback was instantly very positive; the new process was simpler for everyone.  Spork employees could plan a meal in a couple minutes and send out approval request emails with the push of a button.  Clients and partners could approve meals directly within the app and if they had questions, they could simply reply to the email sent by the app to directly contact their Spork point of contact.  No more editing of Excel spreadsheets, exporting to PDF, and manually attaching documents to emails.</p>
+		<img src="/img/content/mockups/spork/client-meal-iphone.jpg" alt="Spork Bytes - Create Meal on iPhone" class="img-right img-framed">
+		<p>After launching with a basic feature set that fulfilled Spork's initial needs, we began an iterative, monthly release process to add new features to the app:</p>
+		<ul>
+			<li>Two-click output of labels for a day's meals with printing optimization</li>
+			<li>A communication log for each meal to see all communications (emails, phone calls, or text messages) that have occurred</li>
+			<li>Fast access to metrics regarding their upcoming week's meals as well as those from the past 30 days and month-to-date</li>
+			<li>Full automation of the sending of confirmation emails</li>
+			<li>A public-facing list of partner restaurants they work with and example menus for each</li>
+		</ul>
+		<p>Beyond the features launched, we have a huge list of ideas that we continue to work on.  Partnering with Spork Bytes has been an incredible and fulfilling experience and will continue to be so for some time to come.</p>
 	</div>
 </section>

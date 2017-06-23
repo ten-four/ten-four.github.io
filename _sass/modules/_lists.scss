@@ -1,0 +1,5 @@
+ul {
+	.img-left ~ & {
+		overflow: hidden;	// fixes issue where bullets were hidden behind image (https://stackoverflow.com/a/710264/1489958)
+	}
+}
